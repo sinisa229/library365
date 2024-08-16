@@ -1,0 +1,35 @@
+
+application {
+  config {
+    baseName library365
+    applicationType monolith
+    packageName com.library365
+    authenticationType session
+    prodDatabaseType postgresql
+    clientFramework angular
+  }
+  entities *
+}
+
+entity Book {
+id Long
+title String required
+subTitle String
+author String
+genre String
+isbn String
+numberOfPages String
+publisher String
+edition String
+genre String
+format BookFormat
+description String
+}
+
+enum BookFormat {
+    HARDCOVER, PAPERBACK, EBOOK, AUDIOBOOK
+}
+
+paginate Book with pagination
+service all with serviceImpl
+filter Book
