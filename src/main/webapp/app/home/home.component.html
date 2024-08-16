@@ -15,6 +15,7 @@
             <span id="home-logged-message">You are logged in as user &quot;{{ account()!.login }}&quot;.</span>
           }
         </div>
+        <p class="lead">You can manage your Books <a class="alert-link" (click)="navigateToBookList()">here</a></p>
       } @else {
         <div class="alert alert-success">
           <span>If you want to </span>

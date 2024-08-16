@@ -33,6 +33,10 @@ export default class HomeComponent implements OnInit, OnDestroy {
     this.router.navigate(['/login']);
   }
 
+  navigateToBookList(): void {
+    this.router.navigate(['/book']);
+  }
+
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
