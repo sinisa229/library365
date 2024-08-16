@@ -5,7 +5,7 @@ Angular / Spring Boot application that helps users manage books.
 ## Starting the application
 
 - Make sure nothing is running on port 8080 locally by visiting http://localhost:8080 in your browser.
-- Run `./mvnw` from the root directory. This will trigger a build and deploy the application locally.
+- Run `./mvnw` from the root directory. This will trigger a build and deploy the application locally serving both the Angular frontend and Spring-Boot backend, as well as a local H2 database initialised with dummy data.
 - Visit http://localhost:8080 and log in the application using the credentials admin/admin
 - View the API Swagger UI here: http://localhost:8080/admin/docs
 - View the application management endpoints here: http://localhost:8080/management
