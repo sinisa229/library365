@@ -28,13 +28,16 @@ public class Book implements Serializable {
     @Column(name = "sub_title")
     private String subTitle;
 
-    @Column(name = "author")
+    @NotNull
+    @Column(name = "author", nullable = false)
     private String author;
 
-    @Column(name = "genre")
+    @NotNull
+    @Column(name = "genre", nullable = false)
     private String genre;
 
-    @Column(name = "isbn")
+    @NotNull
+    @Column(name = "isbn", nullable = false)
     private String isbn;
 
     @Column(name = "number_of_pages")

@@ -33,16 +33,37 @@
         <div class="mb-3">
           <label class="form-label" for="field_author">Author</label>
           <input type="text" class="form-control" name="author" id="field_author" data-cy="author" formControlName="author" />
+          @if (editForm.get('author')!.invalid && (editForm.get('author')!.dirty || editForm.get('author')!.touched)) {
+            <div>
+              @if (editForm.get('author')?.errors?.required) {
+                <small class="form-text text-danger">This field is required.</small>
+              }
+            </div>
+          }
         </div>
 
         <div class="mb-3">
           <label class="form-label" for="field_genre">Genre</label>
           <input type="text" class="form-control" name="genre" id="field_genre" data-cy="genre" formControlName="genre" />
+          @if (editForm.get('genre')!.invalid && (editForm.get('genre')!.dirty || editForm.get('genre')!.touched)) {
+            <div>
+              @if (editForm.get('genre')?.errors?.required) {
+                <small class="form-text text-danger">This field is required.</small>
+              }
+            </div>
+          }
         </div>
 
         <div class="mb-3">
           <label class="form-label" for="field_isbn">Isbn</label>
           <input type="text" class="form-control" name="isbn" id="field_isbn" data-cy="isbn" formControlName="isbn" />
+          @if (editForm.get('isbn')!.invalid && (editForm.get('isbn')!.dirty || editForm.get('isbn')!.touched)) {
+            <div>
+              @if (editForm.get('isbn')?.errors?.required) {
+                <small class="form-text text-danger">This field is required.</small>
+              }
+            </div>
+          }
         </div>
 
         <div class="mb-3">

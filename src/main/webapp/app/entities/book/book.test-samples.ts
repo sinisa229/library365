@@ -3,31 +3,40 @@ import { IBook, NewBook } from './book.model';
 export const sampleWithRequiredData: IBook = {
   id: 14776,
   title: 'hobnob mmm',
+  author: 'replacement um',
+  genre: 'which plus',
+  isbn: 'uh-huh closed thick',
 };
 
 export const sampleWithPartialData: IBook = {
-  id: 25472,
-  title: 'round',
-  author: 'anenst wrong probable',
-  publisher: 'aw stimulating off',
+  id: 14562,
+  title: 'beneath',
+  author: 'distinction easily',
+  genre: 'gosh uselessly',
+  isbn: 'look',
+  edition: 'at',
+  description: 'knottily',
 };
 
 export const sampleWithFullData: IBook = {
-  id: 29581,
-  title: 'geez meanwhile',
-  subTitle: 'geez apud',
-  author: 'usefully sometimes worth',
-  genre: 'beneath against handsome',
-  isbn: 'never',
-  numberOfPages: 'babyish',
-  publisher: 'truthfully lounge',
-  edition: 'duh colorfully',
-  format: 'EBOOK',
-  description: 'grand whoa',
+  id: 22936,
+  title: 'against',
+  subTitle: 'yowza never',
+  author: 'babyish',
+  genre: 'truthfully lounge',
+  isbn: 'duh colorfully',
+  numberOfPages: 'watery to',
+  publisher: 'with',
+  edition: 'unlike obliterate hmph',
+  format: 'PAPERBACK',
+  description: 'tenderly toward',
 };
 
 export const sampleWithNewData: NewBook = {
-  title: 'predecessor unlike obliterate',
+  title: 'negative',
+  author: 'overhaul',
+  genre: 'umpire beautifully neuter',
+  isbn: 'how outplay',
   id: null,
 };
 

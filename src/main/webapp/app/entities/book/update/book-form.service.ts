@@ -51,9 +51,15 @@ export class BookFormService {
         validators: [Validators.required],
       }),
       subTitle: new FormControl(bookRawValue.subTitle),
-      author: new FormControl(bookRawValue.author),
-      genre: new FormControl(bookRawValue.genre),
-      isbn: new FormControl(bookRawValue.isbn),
+      author: new FormControl(bookRawValue.author, {
+        validators: [Validators.required],
+      }),
+      genre: new FormControl(bookRawValue.genre, {
+        validators: [Validators.required],
+      }),
+      isbn: new FormControl(bookRawValue.isbn, {
+        validators: [Validators.required],
+      }),
       numberOfPages: new FormControl(bookRawValue.numberOfPages),
       publisher: new FormControl(bookRawValue.publisher),
       edition: new FormControl(bookRawValue.edition),

@@ -15,13 +15,12 @@ entity Book {
 id Long
 title String required
 subTitle String
-author String
-genre String
-isbn String
+author String required
+genre String required
+isbn String required
 numberOfPages String
 publisher String
 edition String
-genre String
 format BookFormat
 description String
 }
